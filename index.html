@@ -2,87 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Batman Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pattinson Batman Fan Page</title>
   <style>
-    /* Reset */
+    /* Basic Reset */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
     body {
-      font-family: 'Arial', sans-serif;
-      background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
-                  url('https://wallpaperaccess.com/full/186726.jpg') no-repeat center center/cover;
-      color: white;
+      font-family: sans-serif;
+      background-color: #000;
+      color: #eee;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       min-height: 100vh;
     }
-
     header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 50px;
-      background: rgba(0,0,0,0.6);
+      width: 100%;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.7);
+      text-align: center;
     }
-
     header h1 {
-      font-size: 28px;
-      color: red;
-      letter-spacing: 2px;
+      font-size: 2rem;
+      color: #e22;
+      letter-spacing: 3px;
     }
-
-    nav a {
-      text-decoration: none;
-      color: white;
-      margin: 0 15px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      color: red;
-    }
-
     .hero {
       text-align: center;
-      margin-top: 100px;
+      padding: 40px 20px;
     }
-
-    .hero h2 {
-      font-size: 60px;
-      color: red;
+    .hero img {
+      max-width: 80%;
+      height: auto;
+      border: 5px solid #e22;
+      box-shadow: 0 0 20px #e22;
+      border-radius: 8px;
     }
-
     .hero p {
       margin-top: 20px;
-      font-size: 20px;
+      font-size: 1.2rem;
     }
-
-    .hero img {
-      width: 300px;
-      margin-top: 30px;
-      border-radius: 10px;
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.5rem; }
+      .hero p { font-size: 1rem; }
+      .hero img { max-width: 95%; }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>BATMAN</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Projects</a>
-      <a href="#">Contact</a>
-    </nav>
+    <h1>THE BATMAN – Robert Pattinson</h1>
   </header>
-
   <section class="hero">
-    <h2>I Am Vengeance</h2>
-    <p>Welcome to my Batman-themed website!</p>
-    <img src="https://i.pinimg.com/originals/2d/d9/9f/2dd99f08d9db079c066222b2c78e5b23.jpg" alt="Batman">
+    <img src="https://media.gq.com/photos/602f4bbf5aa1d727ab5af7ac/16:9/w_1920,h_1080,c_limit/pattinson-batman.jpg" alt="Robert Pattinson as Batman">
+    <p>Welcome to the Gotham City spotlight.</p>
   </section>
 </body>
 </html>

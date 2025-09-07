@@ -18,13 +18,14 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
+      padding-top: 80px; /* prevents header overlap */
     }
     header {
       width: 100%;
       padding: 20px;
       background: rgba(0, 0, 0, 0.7);
       text-align: center;
-      position: absolute;
+      position: fixed; /* fixed header */
       top: 0;
       left: 0;
     }
@@ -40,6 +41,7 @@
       align-items: flex-end;
       text-align: center;
       background: url("batman.jpg") no-repeat center center/cover;
+      min-height: 400px;
     }
     .hero p {
       background: rgba(0, 0, 0, 0.6);
@@ -48,6 +50,33 @@
       font-size: 1.3rem;
       border-radius: 8px;
       color: #eee;
+    }
+    section.anim {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 40px 0;
+    }
+    section.anim h2 {
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+      color: #e22;
+    }
+    section.anim img {
+      max-width: 100%;
+      width: 300px;
+      display: block;
+    }
+    a.back {
+      display: inline-block;
+      margin: 40px auto;
+      color: #e22;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+    a.back:hover {
+      color: #fff;
     }
     @media (max-width: 600px) {
       header h1 { font-size: 1.5rem; }
@@ -59,24 +88,26 @@
   <header>
     <h1>THE BATMAN – Robert Pattinson</h1>
   </header>
+
   <section class="hero">
     <p>I'm literally him</p>
   </section>
+
   <h1>Batman Animation</h1>
 
   <section class="anim">
     <h2>Batman Flying</h2>
-    <img src="batman flying.gif" alt="batman flying">
+    <img src="batman-flying.gif" alt="Batman flying">
   </section>
 
   <section class="anim">
     <h2>Batman Sitting</h2>
-    <img src="batman sitting.gif" alt="batman sitting">
+    <img src="batman-sitting.gif" alt="Batman sitting">
   </section>
 
   <section class="anim">
     <h2>Bat Signal</h2>
-    <img src="bat signal.gif" alt="bat signal">
+    <img src="bat-signal.gif" alt="Bat signal">
   </section>
 
   <a href="index.html" class="back">⬅ Back to Home</a>
